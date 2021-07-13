@@ -1,0 +1,19 @@
+version: '3' 
+services:
+  redis-cli:
+    image: "redis:alpine" 
+    entrypoint: /bin/sh 
+    env_file:
+      - .env
+    stdin_open: true 
+    tty: true
+    networks:
+      - mynet 
+  redis-server:
+    image: "redis:alpine" 
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
