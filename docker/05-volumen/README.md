@@ -15,7 +15,7 @@ docker volume create persistent-data
 
 ## Attach volumen a container
 ```
-docker run -v persistent-data test/nginx --name test-persistent-data
+docker run -v persistent-data: test-nginx --name test-persistent-data
 ## Adding content
 docker exec -ti test-persistent-data bash
 touch persistent-data/test-file
