@@ -3,7 +3,7 @@
 Creatda con 
 
 ```
-npx create-react-app 03-create-static-web
+npx create-react-app 03-create-static-web --template typescript
 ```
 
 npx permite ejecutar paquetes de npx como si estuvieran instalados de forma global 
@@ -36,5 +36,4 @@ Update the package .json with
 ```
 "homepage": "/release-1",
 ```
-
 
